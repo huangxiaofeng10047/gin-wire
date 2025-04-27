@@ -16,7 +16,7 @@ log:
 database:
   driver: 'mysql'
   host: '127.0.0.1'
-  port: 8306
+  port: 13306
   database: 'go-test'
   table_prefix: ''
   username: 'root'
@@ -36,9 +36,9 @@ jwt:
 
 redis:
   host: '127.0.0.1'
-  port: 8379
+  port: 6379
   db: 0
-  password: ''
+  password: '123456'
 
 storage:
   default: 'local'

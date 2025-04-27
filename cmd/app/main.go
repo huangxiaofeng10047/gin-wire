@@ -88,7 +88,8 @@ func initConfig() {
     if !filepath.IsAbs(configPath) {
         configPath = filepath.Join(rootPath, "conf", configPath)
     }
-
+    fmt.Printf("rootPath: %s\n", rootPath)
+    fmt.Printf("configPath: %s\n", configPath)
     fmt.Println("load config:" + configPath)
 
     v := viper.New()
