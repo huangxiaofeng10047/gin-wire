@@ -1,0 +1,7 @@
+graph TD
+    A[main.go] --> B[wire.go]
+    B --> C[各模块 Provider]
+    A --> D[初始化配置和日志]
+    B --> E[依赖注入初始化]
+    D --> F[启动应用和命令]
+    E --> F
